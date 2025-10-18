@@ -439,6 +439,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
 
+
 }
 
 .cardplanet {
@@ -449,12 +450,14 @@ a {
     height: 100%;
     background-size: cover;
     background-position: center;
+
+
 }
 .imagplanet{
  border-radius: 100%;
       background: none;
-      width: 50%;
-      height: 50%;
+      width: 120px;
+      height: 100px;
  
 
 }
@@ -464,7 +467,6 @@ a {
     font-weight: 600;
     color: white;
       background: none;
-
 
 }
 
@@ -492,11 +494,62 @@ a {
 }
  #planetsection {
         background-image: url('image/background.jpg');
+            align-items: center;
+
 }
 
 #bodyplanet{
     background-color: black;
 }
+#bodyapropos{
+    background-color: black;
+}
+
+
+.bannerapropos {
+    position: relative;
+    text-align:left;
+    padding: 80px 80px;
+    background-image: url('image/apropos.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bannerapropos-content {
+    position: relative;
+    z-index: 1;
+}
+
+.bannerapropos h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: white;
+}
+.bannerapropos h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: white;
+}
+.bannerapropos h3 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.bannerapropos p {
+    font-size: 1em;
+    font-weight: 100;
+    color: white;
+    margin: 40px 0 80px 120px;
+    line-height: 1.5;
+
+}
+ .equipe{
+    background-color: antiquewhite;
+ }
 
 footer{
     width: 100%;

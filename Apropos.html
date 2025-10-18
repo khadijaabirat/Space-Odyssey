@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Ostman - Space Odyssey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body id="bodyapropos">
+    <header class="header">
+        <nav class="nav1">
+            <div class="logo">
+                <img src="image/logo.png" class="imag-logo">
+                <a href="index.html"> </a>
+            </div>
+            <div class="right_nav1">
+                <div class="recherche">
+                    <input type="text" placeholder="rechercher">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="langue">
+                    <span>English</span>
+                    <ul class="langue-icon"> <i class="fas fa-chevron-down"></i>
+                    </ul>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="notification">
+                    <a href="Apropos.html" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </div>
+                <div class="userimage">
+                    <img src="https://i.pravatar.cc/40" alt="User Avatar" class="user-avatar">
+                </div>
+
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/spacex"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/spacex"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.behance.net/search/projects/space%20"><i class="fab fa-behance"></i></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Planètes.html">PLANETES</a></li>
+                    <li><a href="Missions.html">MISSIONS</a></li>
+                    <li><a href="Apropos.html">A PROPOS</a></li>
+                    <li> <a href="Contact.html" class="btn-contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+
+    </header>
+    <main>
+        <section class="bannerapropos">
+            <div class="bannerapropos-content">
+                <h1>À propos de <br>AstroTech Studio</h1>
+                <p>Notre mission est de rendre l’exploration spatiale accessible à tous.<br>
+                    Nous voulons inspirer la curiosité et encourager la découverte<br>
+                    scientifique à travers un contenu interactif, éducatif et<br>
+                    visuellement captivant.</p>
+                <h2>Notre équipe</h2>
+                <img src="image/equipe (4).jpg" class="imagplanet">
+                <h3>MR YOUSSEF</h3>
+                <div class="equipe">
+                    <h3>Développeur</h3>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="cards">
+                <div class="card">
+                    <h2>Discover the Universe</h2>
+                    <p>Get a glimpse into the wonders of the cosmos with our curated content on astronomical
+                        discoveries, celestial events, and fascinating space facts. Start your journey into the
+                        mysteries of the universe right here.</p>
+                    <a href="Missions.html" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="card">
+                    <h2>Updated on Space News</h2>
+                    <p>Keep up with the latest news in the world Keep up with the latest news in the world of space and
+                        astronomy. From recent discoveries to upcoming celestial events, stay informed with the most
+                        current updates and highlights.</p>
+                    <a href="Missions.html" class="btn-learn-more">Learn More</a>
+                </div>
+                <div class="card">
+                    <h2>Learn from Experts</h2>
+                    <p>Keep up with the latest news in the world Keep up with the latest news in the world of space and
+                        astronomy. From recent discoveries to upcoming celestial events, stay informed with the most
+                        current updates and highlights.</p>
+                    <a href="Missions.html" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Reveal sections on scroll
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.2 });
+            sections.forEach(sec => observer.observe(sec));
+        </script>
+    </main>
+    <footer>
+        <div class="footerd">
+
+            <nav class="nav2">
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="recherche">
+                    <input type="text" placeholder="rechercher">
+                    <i class="fas fa-search"></i>
+                </div>
+
+            </nav>
+            <nav class="nav1">
+                <div class="logo">
+                    <img src="image/logo.png" class="imag-logo">
+                    <a href="index.html"> </a>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/spacex"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/spacex"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.behance.net/search/projects/space%20"><i class="fab fa-behance"></i></a>
+                </div>
+
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
