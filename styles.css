@@ -26,6 +26,8 @@
     background-size: cover;
     width: 100%;
     height: 60px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+
 
 }
 
@@ -139,6 +141,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+
 }
 
 .main-nav ul {
@@ -281,7 +284,7 @@ a {
     height: 100%;
     background-size: cover;
     background-position: center;
-            padding: 1rem 1rem;
+    padding: 1rem 1rem;
 
 }
 
@@ -330,36 +333,45 @@ a {
 
 }
 
+.bodymission {
+    background-color: black;
+}
+
 .divshadow {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: black;
     border-radius: 50px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     align-items: center;
     gap: 20px;
-            padding: 1rem 1rem;
-
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 10px 15px black;
 }
 
 .divimage {
-    width: 300px;
-    height: 300px;
-    ;
+    width: 45%;
+    height: 90%;
     border-radius: 50px;
+}
+
+.divimage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
 
 }
 
 .divshadowtext {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     background-color: rgb(62, 61, 61);
-    border-radius: 50px;
-    padding: 1rem;
     border-radius: 30px;
+    padding: 1rem;
     transition: 0.3s;
-    width: 40%;
-    height: 80%;
+    width: 45%;
+    height: 90%;
     background-size: cover;
+    justify-content: center;
     align-items: center;
 }
 
@@ -394,26 +406,67 @@ a {
     background-size: cover;
     background-position: center;
 }
+
 .bannermission-content {
     position: relative;
     z-index: 1;
+
 }
 
 .bannermission h1 {
     font-size: 2.5em;
     font-weight: 700;
     margin: 0 0 20px 0;
-    color: rgb(5, 5, 5);
+    color: black;
+
 }
 
 .bannermission p {
     font-size: 1em;
     font-weight: 300;
-    color: rgb(0, 0, 0);
+    color: black;
     margin-bottom: 40px;
-    line-height: 1.5;
+
 }
 
+.divshadowmission {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 50px;
+    align-items: center;
+    gap: 20px;
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 10px 15px rgb(195, 188, 188);
+}
+
+.divshadowtext {
+    background-color: rgb(62, 61, 61);
+    border-radius: 30px;
+    padding: 1rem;
+    transition: 0.3s;
+    width: 45%;
+    height: 90%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.divshadowmissiontext h2 {
+    margin-top: 0;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+}
+
+.divshadowmissiontext p {
+    color: white;
+    font-size: 0.9em;
+    padding-top: 10%;
+    line-height: 1.5rem;
+}
 
 .bannerplanete {
     position: relative;
@@ -431,8 +484,9 @@ a {
     margin: 0 0 20px 0;
     color: white;
 
-    
+
 }
+
 
 .cardplanetsplanet {
     display: flex;
@@ -443,7 +497,7 @@ a {
 }
 
 .cardplanet {
-      background: none;
+    background: none;
     border-radius: 30px;
     transition: 0.3s;
     width: 25%;
@@ -453,20 +507,22 @@ a {
 
 
 }
-.imagplanet{
- border-radius: 100%;
-      background: none;
-      width: 120px;
-      height: 100px;
- 
+
+.imagplanet {
+    border-radius: 100%;
+    background: none;
+    width: 120px;
+    height: 100px;
+
 
 }
+
 .cardplanet h3 {
     margin-top: 0;
     font-size: 1.4em;
     font-weight: 600;
     color: white;
-      background: none;
+    background: none;
 
 }
 
@@ -475,40 +531,43 @@ a {
     font-size: 0.7em;
     padding-top: 10%;
     line-height: 1.5rem;
-      background: none;
- 
+    background: none;
+
 
 }
 
 
-.h2planet{
-        background-image: url('image/background.jpg');
+.h2planet {
+    background-image: url('image/background.jpg');
 }
-.h2planet h1{
-    
+
+.h2planet h1 {
+
     margin-top: 0;
     font-size: 1.4em;
     font-weight: 600;
     color: white;
-      background: none;
+    background: none;
 }
- #planetsection {
-        background-image: url('image/background.jpg');
-            align-items: center;
+
+#planetsection {
+    background-image: url('image/background.jpg');
+    align-items: center;
 
 }
 
-#bodyplanet{
+#bodyplanet {
     background-color: black;
 }
-#bodyapropos{
+
+#bodyapropos {
     background-color: black;
 }
 
 
 .bannerapropos {
     position: relative;
-    text-align:left;
+    text-align: left;
     padding: 80px 80px;
     background-image: url('image/apropos.jpg');
     background-size: cover;
@@ -521,43 +580,202 @@ a {
 }
 
 .bannerapropos h1 {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: 700;
-    margin: 0 0 20px 0;
-    color: white;
-}
-.bannerapropos h2 {
-    font-size: 1.5em;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-    color: white;
-}
-.bannerapropos h3 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 10px 0;
     color: white;
 }
 
 .bannerapropos p {
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 100;
     color: white;
-    margin: 40px 0 80px 120px;
+    margin: 40px 0 80px 40px;
     line-height: 1.5;
 
 }
- .equipe{
-    background-color: antiquewhite;
- }
 
-footer{
+.bannerapropos h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.imagapropos {
+    border-radius: 100%;
+    background: none;
+    width: 120px;
+    height: 120px;
+
+
+}
+
+.bannerapropos h3 {
+    font-size: 0.8em;
+    font-weight: 100;
+    margin: 10px 0 10px 0;
+    color: white;
+    padding: 10px 0 10px 0;
+
+
+}
+
+.equipe {
+    background-color: rgb(133, 131, 129);
+    text-align: center;
+    border-radius: 50px;
+
+}
+
+.divequipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: left;
+
+
+}
+
+
+.cardsapropos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+}
+
+.cardapropos {
+    box-shadow: 10px 10px 10px 0px rgba(1, 32, 232, 0.6);
+    background-image: url('image/view-starry-night-sky-with-nature-mountains-landscape.jpg');
+    border-radius: 50px;
+    border-radius: 30px;
+    transition: 0.3s;
+    width: 25%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    padding: 1rem 1rem;
+
+}
+
+.cardapropos h2 {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: white;
+}
+
+.cardapropos p {
+    color: white;
+    font-size: 0.8em;
+    padding-top: 10px;
+    line-height: 1.3rem;
+}
+
+
+
+
+
+
+.cardscontact {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-around;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+
+}
+
+#imagecontact {
+    background-image: url(image/331df6d5560f6ca581d180beb7edf92001c026e7.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 800px;
+    height: 600px;
+    border-radius: 30px;
+
+
+}
+
+.cardcontact h2 {
+    color: white;
+    padding: 10px 10px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.cardcontact h3 {
+    color: white;
+    padding: 10px 10px;
+    font-size: 15px;
+    font-weight: 100;
+
+}
+
+.cardcontact {
+    border-radius: 30px;
+    transition: 0.3s;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 1rem;
+    display: block;
+    margin: 10px 10px;
+
+}
+
+.contact-icon {
+    color: white;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info {
+    padding: 10rem 1rem;
+
+}
+
+.iconscontactsm {
+    color: black;
+    font-size: 1em;
+    display: flex;
+    align-items:flex-end;
+    gap: 15px;
+    padding: 40px 20px;
+}
+.contact-iconsm:hover {
+    color: gray;
+    cursor: pointer;
+    
+}
+.contact-iconsm {
+    background-color: white;
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+footer {
     width: 100%;
     height: 300px;
     background-image: url('image/background.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
- background-size: cover;
+    background-size: cover;
     background-position: center;
 }

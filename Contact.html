@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Ostman - Space Odyssey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav1">
+            <div class="logo">
+                <img src="image/logo.png" class="imag-logo">
+                <a href="index.html"> </a>
+            </div>
+            <div class="right_nav1">
+                <div class="recherche">
+                    <input type="text" placeholder="rechercher">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="langue">
+                    <span>English</span>
+                    <ul class="langue-icon"> <i class="fas fa-chevron-down"></i>
+                    </ul>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="notification">
+                    <a href="Apropos.html" class="notification-icon">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                </div>
+                <div class="userimage">
+                    <img src="https://i.pravatar.cc/40" alt="User Avatar" class="user-avatar">
+                </div>
+
+            </div>
+        </nav>
+        <nav class="nav2">
+            <div class="social-icons">
+                <a href="https://www.instagram.com/spacex"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/spacex"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.behance.net/search/projects/space%20"><i class="fab fa-behance"></i></a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Planètes.html">PLANETES</a></li>
+                    <li><a href="Missions.html">MISSIONS</a></li>
+                    <li><a href="Apropos.html">A PROPOS</a></li>
+                    <li> <a href="Contact.html" class="btn-contact">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+
+    </header>
+    <main>
+        <section class="section">
+            <div class="cardscontact">
+                <div class="cardcontact" id="imagecontact">
+                    <h2>Contact Us</h2>
+                    <h3>Say something to start a live chat!</h3>
+                    <div class="info">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                            <h3>+1012 3456 789</h3>
+                        </div>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                            <h3>demo@gmail.com</h3>
+                        </div>
+                    </div>
+                    <div class="iconscontactsm">
+                        <div class="contact-iconsm">
+                            <a href src="https://x.com/spacex">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="contact-iconsm">
+                            <a href src="https://www.instagram.com/spacex/#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="contact-iconsm">
+                            <a href src="https://www.linkedin.com/company/spacex">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardcontact">
+                    <form class="contact-form">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <script>
+            // Reveal sections on scroll
+            const sections = document.querySelectorAll('.section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('visible');
+                });
+            }, { threshold: 0.2 });
+            sections.forEach(sec => observer.observe(sec));
+        </script>
+    </main>
+    <footer>
+        <div class="footerd">
+
+            <nav class="nav2">
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="recherche">
+                    <input type="text" placeholder="rechercher">
+                    <i class="fas fa-search"></i>
+                </div>
+
+            </nav>
+            <nav class="nav1">
+                <div class="logo">
+                    <img src="image/logo.png" class="imag-logo">
+                    <a href="index.html"> </a>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Terms</a></li>
+                        <li><a href="Planètes.html">Privacy</a></li>
+                        <li><a href="Missions.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/spacex"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/spacex"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.behance.net/search/projects/space%20"><i class="fab fa-behance"></i></a>
+                </div>
+
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>
